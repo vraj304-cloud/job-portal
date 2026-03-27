@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal - Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-badge" aria-hidden="true"></div>
+          <a href="index.html">JobPortal</a>
+        </div>
+
+        <nav class="nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="jobs.html">Job Listing</a>
+          <a href="post-job.html">Job Posting</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+
+        <div class="auth-area" data-auth-area></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="hero">
+          <h1>Find the right job. Post the right role.</h1>
+          <p>
+            This is a simple Job Portal Management System built using pure HTML, CSS, and JavaScript. It
+            supports user registration/login, job posting, and job listing.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="jobs.html">Browse Jobs</a>
+            <button class="btn secondary" id="ctaPostJob" type="button">Post a Job</button>
+          </div>
+        </section>
+
+        <div class="grid-2" style="margin-top: 16px;">
+          <section class="card">
+            <div class="card-body">
+              <h2 class="card-title">Quick Stats</h2>
+
+              <div style="display: grid; gap: 10px; margin-top: 14px;">
+                <div class="message">
+                  Total jobs posted: <strong id="statJobs">0</strong>
+                </div>
+                <div class="message">
+                  Total registered users: <strong id="statUsers">0</strong>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="card" id="getStartedCard">
+            <div class="card-body">
+              <h2 class="card-title">Get started</h2>
+              <p class="card-subtitle">Create an account to post jobs</p>
+
+              <div style="display: grid; gap: 10px; margin-top: 14px;">
+                <a class="btn" href="register.html">Create Account</a>
+                <a class="btn secondary" href="login.html">Login</a>
+              </div>
+
+              <p class="helper" style="margin-top: 12px;">
+                By using this site, you agree to our <a href="terms.html">Terms &amp; Conditions</a>.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>JobPortal</span>
+        <span class="small">Pure HTML + CSS + JS</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
